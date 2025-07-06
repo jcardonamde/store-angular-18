@@ -3,7 +3,7 @@
     class="w-full flex flex-wrap items-center justify-between mx-auto py-4"
   >
     <div class="flex items-center space-x-8">
-      <a href="https://flowbite.com/" class="flex items-center ">
+      <a class="flex items-center ">
         <img
           src="https://flowbite.com/docs/images/logo.svg"
           class="h-6 mr-3"
@@ -87,7 +87,7 @@
   <div class="pt-4 flex flex-col">
     <div class="flex justify-between items-center space-y-2" *ngFor="let product of cart()">
       <div class="flex space-x-2 items-center">
-        <img class="w-6 h-6" [src]="product.image" [alt]="product.title">
+        <img class="w-6 h-6" [src]="product.images[0]" [alt]="product.title">
         <h3>{{ product.title }}</h3>
       </div>
       <p>{{ product.price }}</p>
